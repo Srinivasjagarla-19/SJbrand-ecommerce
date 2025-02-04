@@ -1040,7 +1040,8 @@ footer {
     #menu-prc .fa-circle-down {
         position: absolute;
         display: block;
-        top: 15.6%;
+        top: 14%;
+        font-size: 1.5rem;
         right: 7%;
         z-index: 1;
         background: linear-gradient(0deg, transparent, transparent);
