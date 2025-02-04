@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJBRANDS - Your One-Stop Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">welcome to SJBRANDS</div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <i class="fa-solid fa-xmark icons " onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars icons " onclick="openMenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url(images/Hero_layout1.jpg);">
+            <br>
+            <br>
+            <br>
+            <p>Discover the latest trends and essentials for your lifestyle</p>
+            <br>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category">
+                    <a href="products.html"> <img src="images/fashion/fashion.avif" alt="Fashion"></a>
+                    <h3 >Fashion</h3>
+                </div>
+                <div class="category footwear">
+                    <a href="products.html"><img src="images/footwear/footwear.avif" alt="Footwear"></a>
+                    <h3>Footwear</h3>
+                </div>
+                <div class="category footwear1">
+                    <a href="products.html"><img src="images/electronics/electronics.jpeg" alt="Electronics"></a>
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category">
+                    <a href="products.html"><img src="images/homeEssentials/home-essentials.jpg"
+                            alt="Home Essentials"></a>
+                    <h3>Home Essentials</h3>
+                </div>
+                <div class="category">
+                    <a href="products.html"><img src="images/accessories/accessories.avif" alt="Accessories"></a>
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SJBRANDS.</p>
+    </footer>
+    <script>
+        var sideMenu = document.getElementById("menu")
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-230px"
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

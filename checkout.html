@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - SJBRANDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SJBRANDS</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <a class="cart-icon" href="cart.html"><i class="fa-solid fa-cart-shopping check-cart"></i></a>
+        <a class="cart-icon" href="index.html"><i class="fa-sharp-duotone fa-solid fa-house success-house"></i></a>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; padding-top: 10px;">Checkout</h1>
+        <div class="checkout-container">
+            <form id="checkout-form">
+                <div class="form-section">
+                    <h2>Personal Details</h2>
+                    <input type="text" name="fullName" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="form-section">
+                    <h2>Shipping Address</h2>
+                    <input type="text" name="address" placeholder="Street Address" required>
+                    <input type="text" name="city" placeholder="City" required>
+                    <input type="text" name="state" placeholder="State" required>
+                    <input type="text" name="zipCode" placeholder="ZIP Code" required>
+                </div>
+
+                <div class="form-section">
+                    <h2>Payment Method</h2>
+                    <select name="paymentMethod" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div id="checkout-cart-items">
+                        <!-- Cart items will be dynamically populated by JavaScript -->
+                    </div>
+                    <p>Total Price: ₹<span id="checkout-total-price">0.00</span></p>
+                </div>
+
+                <button type="submit" class="cta-button">Place Order</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SJBRANDS.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
