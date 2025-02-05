@@ -14,17 +14,17 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #6e7fd7, #425bb9);
+            background: linear-gradient(135deg, #D6C0B3, #AB886D);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            color: #fff;
+            color: #333;
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
             width: 100%;
             max-width: 400px;
             padding: 40px;
@@ -37,7 +37,8 @@
             font-size: 1.8rem;
             text-align: center;
             margin-bottom: 30px;
-            color: #333;
+            color: #5A3E36;
+            /* Dark Brown */
             font-weight: 600;
         }
 
@@ -45,22 +46,26 @@
             width: 100%;
             padding: 12px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #AB886D;
+            /* Warm Brown */
             border-radius: 5px;
             font-size: 1rem;
             transition: border-color 0.3s ease;
             outline: none;
-            color: #333;
+            color: #5A3E36;
+            /* Dark Brown */
         }
 
         input:focus {
-            border-color: #6e7fd7;
+            border-color: #D6C0B3;
+            /* Soft Beige */
         }
 
         button {
             width: 100%;
             padding: 14px;
-            background-color: #6e7fd7;
+            background: linear-gradient(135deg, #AB886D, #5A3E36);
+            /* Warm Brown Gradient */
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -71,7 +76,8 @@
         }
 
         button:hover {
-            background-color: #5c6bb4;
+            background: linear-gradient(135deg, #9E7B67, #4A3229);
+            transform: scale(0.99);
         }
 
         button:active {
@@ -79,31 +85,28 @@
         }
 
         button.logout {
-            background-color: #f44336;
+            background: linear-gradient(135deg, #DA8359, #AB452A);
+            /* Burnt Orange */
             margin-top: 20px;
         }
 
         button.logout:hover {
-            background-color: #d32f2f;
-        }
-
-        button:hover {
-            transform: scale(0.99);
-            transition: all .2s linear;
+            background: linear-gradient(135deg, #C76A46, #9A3620);
         }
 
         form p {
             font-size: 0.9rem;
             text-align: center;
-            color: #555;
+            color: #5A3E36;
         }
 
-        form p a {
-            color: #6e7fd7;
+        a {
+            color: #AB886D;
             text-decoration: none;
+            font-weight: 600;
         }
 
-        form p a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
@@ -157,14 +160,16 @@
             display: none;
         }
 
-        div p{
+        div p {
             color: #333;
             margin-top: 15px;
             text-align: center;
         }
-        div p:active{
+
+        div p:active {
             transform: scale(0.99);
         }
+
         @media screen and (max-width: 480px) {
             .container {
                 padding: 25px;
@@ -234,7 +239,7 @@
                 createUserWithEmailAndPassword(auth, email, password)
                     .then((userCredential) => {
                         alert("User Registered Successfully!");
-                        window.location.href = "auth.html"; 
+                        window.location.href = "auth.html";
                     })
                     .catch((error) => {
                         alert(error.message);
@@ -252,7 +257,7 @@
                 signInWithEmailAndPassword(auth, email, password)
                     .then((userCredential) => {
                         alert("User Logged In Successfully!");
-                        window.location.href = "auth.html"; 
+                        window.location.href = "auth.html";
                     })
                     .catch((error) => {
                         alert("Incorrect email or password. Please try again.");

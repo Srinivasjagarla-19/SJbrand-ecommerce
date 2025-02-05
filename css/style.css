@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #161615;
+    background-color: #FCFAEE;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,7 +33,7 @@ h3 {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #FCFAEE;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -53,7 +52,7 @@ nav {
 nav .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: #384858;
 }
 
 nav ul {
@@ -69,7 +68,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #AB886D;
     transition: color 0.3s ease;
     display: inline-block;
     padding: 8px 12px;
@@ -86,7 +85,7 @@ nav ul li:hover {
     padding: 12px 20px;
     font-size: 1rem;
     color: #333;
-    background-color: #f1f1f1;
+    background-color: #FCFAEE;
     border: 2px solid #ddd;
     border-radius: 50px;
     outline: none;
@@ -99,11 +98,12 @@ nav ul li:hover {
 }
 
 .search-input:focus {
-    border-color: hsla(242, 93%, 47%, 0.868);
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(80, 0, 255, 0.4);
+    border-color: #DA8359; 
+    background-color: #FCFAEE;
+    box-shadow: 0 4px 10px rgba(218, 131, 89, 0.4);
     transform: scale(1.05);
 }
+
 
 .search-input::placeholder {
     color: #888;
@@ -112,11 +112,11 @@ nav ul li:hover {
 }
 
 .search-input:hover {
-    border-color: hsl(242, 93%, 47%);
+    border-color: #DA8359;
 }
 
 .search-input:focus::placeholder {
-    color: hsl(242, 93%, 47%); 
+    color: #AB886D; 
 }
 
 @keyframes fadeIn {
@@ -130,12 +130,13 @@ nav ul li:hover {
     }
 }
 nav ul li a:hover {
-    color: hsl(242, 93%, 47%);
+    color: #DA8359;
 }
+
 .logout{
     border: none;
-    background-color: #fff;
-    color: #2c3e50;
+    background-color: #FCFAEE;
+    color: #AB886D;
     padding: 8px 12px;
     font-size: 1rem;
     cursor: pointer;
@@ -145,7 +146,7 @@ nav ul li a:hover {
 }
 
 .logout:hover{
-    color: hsl(242, 93%, 47%);
+    color: #DA8359;
     transform: scaleX(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
@@ -153,7 +154,7 @@ nav ul li a:hover {
 
 .name{
     position: absolute;
-    background-color: hsl(242, 93%, 47%);
+    background-color: #DA8359;
     top:28%;
     padding: 5px 10px;
     border-radius: 8px;
@@ -173,13 +174,14 @@ nav ul li a:hover {
     }
 }
 .name p{
-    color: #adbcca;
+    color: #fff;
 }
 
 .name span{
     text-transform: capitalize;
     font-size: 1.2rem;
     color: #fff;
+    font-weight: 700;
 }
 nav .icons,
 nav .cart-icon {
@@ -188,7 +190,6 @@ nav .cart-icon {
 
 /* Hero Section */
 .hero {
-    /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -222,7 +223,7 @@ nav .cart-icon {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: #3a6b7a;
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -241,7 +242,6 @@ nav .cart-icon {
     left: -100%;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(120deg, #2575fc 0%, #6a11cb 100%); */
     transition: all 0.3s ease;
     z-index: -1;
 }
@@ -271,44 +271,44 @@ nav .cart-icon {
 
 .backtoPP {
     text-decoration: none;
-    padding: 10px 94px;
+    padding: 10px 50px;
 }
 
 /* Specific button variations */
 .category-btn {
     background: linear-gradient(0deg,
-            rgba(20, 167, 62, 1) 0%,
-            rgba(102, 247, 113, 1) 100%);
+            rgb(218, 139, 42,1) 0%, 
+            rgba(218, 131, 89, 1) 100%);
     margin: 0;
     padding: 12px 25px;
     font-size: 0.9em;
 }
 
 .category-btn.active {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    background: linear-gradient(135deg, #DA8359 0%, #bd452a 100%);
 }
 
 .product-card button {
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    background: #a66b27; 
     margin-top: 10px;
     width: 100%;
 }
 
 .cart-item-details button {
-    background: linear-gradient(135deg, #ff6a88 0%, #ff6a88 100%);
+    background: linear-gradient(135deg, #DA8359 0%, #DA8359 100%); 
     margin: 5px;
     padding: 8px 15px;
     font-size: 0.9em;
-    
 }
 
 .checkout-container button[type="submit"] {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    background: #bd452ada;
     width: 100%;
     margin-top: 20px;
     padding: 15px;
     font-size: 1.1em;
 }
+
 
 /* Categories */
 .categories {
@@ -406,15 +406,16 @@ nav .cart-icon {
 .product-card-name {
     font-size: 1.1em;
     font-weight: 600;
-    color: #2c3e50;
+    color: #AB886D; 
     margin: 0;
 }
 
 .product-card-price {
     font-size: 1.2em;
     font-weight: bold;
-    color: #2ecc71;
+    color: #000000bd; 
 }
+
 
 .product-card-description {
     color: #7f8c8d;
@@ -424,7 +425,7 @@ nav .cart-icon {
 }
 
 .product-card-add-btn {
-    background-color: #3498db;
+    background-color: #AB886D;
     color: white;
     border: none;
     border-radius: 6px;
@@ -435,7 +436,7 @@ nav .cart-icon {
 }
 
 .product-card-add-btn:hover {
-    background-color: #2980b9;
+    background: linear-gradient(135deg, #DA8359 0%, #bd452a 100%);
 }
 
 /* Responsive Design */
@@ -480,7 +481,7 @@ nav .cart-icon {
     flex: 2;
     font-size: 1em;
     font-weight: 500;
-    color: #2c3e50;
+    color: #AB886D;
     margin-right: 15px;
 }
 
@@ -488,7 +489,7 @@ nav .cart-icon {
     flex: 1;
     font-size: 1.1em;
     font-weight: 600;
-    color: #2ecc71;
+    color: #DA8359;
     text-align: center;
 }
 
@@ -511,7 +512,7 @@ nav .cart-icon {
 }
 
 .quantity-btn-horizontal:hover {
-    color: #3498db;
+    color: #DA8359;
 }
 
 .quantity-input-horizontal {
@@ -525,7 +526,7 @@ nav .cart-icon {
 
 .product-card-remove-btn-horizontal {
     background: none;
-    color: #e74c3c;
+    color: #DA8359; 
     border: none;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -536,13 +537,13 @@ nav .cart-icon {
 }
 
 .product-card-remove-btn-horizontal:hover {
-    color: #c0392b;
+    color: #AB886D; 
 }
 
 .product-card-total-horizontal {
     flex: 1;
     font-weight: 600;
-    color: #2ecc71;
+    color: #AB886D;
     text-align: right;
 }
 
@@ -614,8 +615,8 @@ nav .cart-icon {
 
 .product-card-products .price {
     font-weight: bold;
-    color: #2ecc71;
-    margin: 10px 0;
+    color: #030303da;
+    margin: 10px 0; 
     font-size: 1.2em;
 }
 
@@ -673,7 +674,7 @@ nav .cart-icon {
     text-align: center;
     font-size: 1.1em;
     font-weight: 600;
-    color: #2ecc71;
+    color: #0b0c0cdc;
 }
 .cart-item-details h4{
     font-size: 0.94rem;
@@ -723,7 +724,7 @@ h4 .remove-btn{
 }
 
 .remove-btn {
-    background-color: #e74c3c;
+    background-color: #DA8359; /* Burnt Orange */
     color: white;
     border: none;
     border-radius: 4px;
@@ -734,16 +735,17 @@ h4 .remove-btn{
 }
 
 .remove-btn:hover {
-    background-color: #c0392b;
+    background-color: #AB886D; /* Warm Brown */
 }
 
 .cart-item-details .item-total {
     font-weight: 600;
-    color: #2ecc71;
+    color: #252322; /* Warm Brown */
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 
 .fa-house {
     display: none;
@@ -807,20 +809,33 @@ h4 .remove-btn{
 }
 
 .cart-summary-details .value {
-    color: #2ecc71;
+    color: #AB886D; 
     font-weight: bold;
 }
 
 .cart-summary button {
     width: 100%;
     margin-top: 15px;
+    background: linear-gradient(135deg, #AB886D, #5A3E36);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease-in-out;
+}
+
+.cart-summary button:hover {
+    background: linear-gradient(135deg, #9E7B67, #4A3229);
+    transform: scale(0.98);
 }
 
 .cart-notification {
     position: fixed;
     top: 80px;
     right: 20px;
-    background-color: #2ecc71;
+    background-color: #AB886D; 
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -944,11 +959,6 @@ footer {
 
 /* Responsive Design */
 
-@media screen and (max-width: 500px){
-    .hero p{
-        padding-right: 20px;
-    }
-}
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -969,9 +979,8 @@ footer {
 
     .hero a {
         position: absolute;
-        top: 20%;
+        top: 24%;
         right: 35%;
-        overflow: hidden;
     }
 
     .categories {
@@ -1012,7 +1021,7 @@ footer {
         top: 20px;
         right: 20px;
         cursor: pointer;
-        color: rgba(20, 167, 62, 1);
+        color: #663e1f;
     }
 
     nav ul li {
@@ -1020,20 +1029,20 @@ footer {
         margin: 25px;
     }
 
-    nav ul li:active {
-        color: white;
+    nav ul li a:active {
+        color: #663e1f;
     }
 
     nav ul li:hover {
         border-radius: 8px;
         transform: scale(1.1);
-        background-color: #2575fc;
+        background-color: #fff;
+        color: #fff;
     }
-
     nav .logout{
         border-radius: 8px;
         transform: scale(1.1);
-        background-color: #2575fc;
+        background-color: #663e1f;
         position: absolute;
         top: 2%;
         left: 15%;
@@ -1051,7 +1060,7 @@ footer {
         right: 16%;
         top: 16px;
         font-size: 1.5rem;
-        color: rgba(20, 167, 62, 1);
+        color: #663e1f;
     }
 
     .fa-house {
@@ -1060,7 +1069,7 @@ footer {
         right: 3%;
         top: 24px;
         font-size: 1.7rem;
-        color: rgba(20, 167, 62, 1);
+        color: #663e1f;
     }
 
     .success-house {
@@ -1072,7 +1081,8 @@ footer {
     nav .cart-icon:active,
     nav .icons:active,
     .fa-house:active {
-        color: blue;
+        color: #fff;
+        
     }
 
     .cart-item h3 {
@@ -1116,12 +1126,9 @@ footer {
         font-size: 12px;
         padding: 0.5em 1em 0.5em 1em;
         color: white;
-        background: #ad5389;
-        background: linear-gradient(0deg,
-                rgba(20, 167, 62, 1) 0%,
-                rgba(102, 247, 113, 1) 100%);
+        background: linear-gradient(145deg, #663e1f 0%, #b3683d 100%);
         border: none;
-        box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+        box-shadow: 0 0.7em 1.5em -0.5em rgba(171, 136, 109, 0.6);
         letter-spacing: 0.05em;
         border-radius: 20em;
         position: absolute;
@@ -1134,11 +1141,14 @@ footer {
     }
 
     .cssbuttons-io-button:hover {
-        box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+        box-shadow: 0 0.5em 1.5em -0.5em rgba(171, 136, 109, 0.6);
+        transform: scale(1.05);
     }
 
     .cssbuttons-io-button:active {
-        color: #2575fc;
+        background: linear-gradient(145deg, #96745D 0%, #BFA593 100%);
+        transform: scale(0.98);
+        color: #5A3E36;
     }
 
     /* .fa-cart-shopping:active{
@@ -1192,7 +1202,9 @@ footer {
     }
 
     nav .cart-icon:active {
-        color: blue;
+        background: linear-gradient(145deg, #96745D 0%, #BFA593 100%);
+        transform: scale(0.98);
+        color: #fff;
     }
     .search-input{
         position: absolute;
@@ -1216,21 +1228,22 @@ footer {
         top: 8px;
         left: 20px;
         cursor: pointer;
-        color: rgba(20, 167, 62, 1);
+        background: linear-gradient(145deg, #5E4035 0%, #8C6A5B 100%);
+        color: #fff;
         background-color: #fff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);; 
         transition: all 0.3s ease-in-out;
     }
     
     .gtsym .fa-less-than:hover {
-        background-color: rgba(20, 167, 62, 0.1);
-        color: #148a3e;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(145deg, #4E3229 0%, #7A5B4D 100%);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        transform: scale(1.08);
     }
     
     .gtsym .fa-less-than:active {
-        color: #2575fc;
-        transform: translateY(0%) scale(0.95);
+        background: linear-gradient(145deg, #3D2921 0%, #6B4D3E 100%);
+        transform: scale(0.92);
     }
     .backtoPP{
         padding: 10px 40px;
@@ -1239,6 +1252,13 @@ footer {
 @media screen and (max-width:459px){
     .search-input{
         max-width: 150px;
+    }
+    .hero a{
+        position: absolute;
+        top: 22%;
+    }
+    .hero p{
+        padding-right: 20px;
     }
 }
 
