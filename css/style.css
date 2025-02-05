@@ -1108,10 +1108,14 @@ footer {
     .name p{
         font-size: auto;
     }
+
+    #menu-prc{
+        position: relative;
+    }
     #menu-prc .fa-circle-down {
         position: absolute;
         display: inline-block;
-        top: 18%;
+        top: 0px;
         font-size: 1.5rem;
         right: 7%;
         z-index: 1;
