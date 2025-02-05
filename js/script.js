@@ -2,9 +2,9 @@
 let cart = [];
 const products = [
     // Fashion (15 products)
+    { id: 13, name: 'Summer Dress', category: 'fashion', price: 599.99, description: 'Flowy summer dress', image: 'images/fashion/Flowysummerdress.webp' },
     { id: 1, name: 'Classic T-Shirt', category: 'fashion', price: 299.99, description: 'Comfortable cotton t-shirt', image: 'images/fashion/tshirt.webp' },
     { id: 2, name: 'Denim Jeans', category: 'fashion', price: 799.99, description: 'Slim fit blue denim', image: 'images/fashion/Slimfitbluedenim.webp' },
-    { id: 13, name: 'Summer Dress', category: 'fashion', price: 599.99, description: 'Flowy summer dress', image: 'images/fashion/Flowysummerdress.webp' },
     { id: 14, name: 'Formal Shirt', category: 'fashion', price: 499.99, description: 'Crisp cotton formal shirt', image: 'images/fashion/Crispcottonformalshirt.webp' },
     { id: 15, name: 'Leather Jacket', category: 'fashion', price: 1999.99, description: 'Classic black leather jacket', image: 'images/fashion/leatherjacket.jpg' },
     { id: 16, name: 'Hoodie', category: 'fashion', price: 449.99, description: 'Warm and comfortable hoodie', image: 'images/fashion/hoodie.jpg' },

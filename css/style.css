@@ -397,8 +397,8 @@ nav .cart-icon {
     }
 
     .product-card-details {
-        padding: 15px;
-        gap: 10px;
+        padding: 10px;
+        gap: 2px;
     }
 
     .product-card-header {
@@ -715,7 +715,9 @@ h4 .remove-btn{
         gap: 10px;
         padding: 15px;
     }
-
+    .products-grid{
+        gap: 1px;
+    }
     .cart-item-details h3,
     .cart-item-price,
     .quantity-control,
@@ -1103,12 +1105,12 @@ footer {
         padding: 3.5px 7px;
     }
     .name p{
-        font-size: 1rem;
+        font-size: auto;
     }
     #menu-prc .fa-circle-down {
         position: absolute;
         display: block;
-        top: 15%;
+        top: 15.6%;
         font-size: 1.5rem;
         right: 7%;
         z-index: 1;
