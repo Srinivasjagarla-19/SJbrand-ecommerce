@@ -941,7 +941,14 @@ footer {
 .gtsym .fa-less-than{
     display: none;
 }
+
 /* Responsive Design */
+
+@media screen and (max-width: 500px){
+    .hero p{
+        padding-right: 20px;
+    }
+}
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -955,11 +962,9 @@ footer {
 
     .hero p {
         position: absolute;
-        top: 5%;
-        right: 7%;
+        top: 75px;
         font-size: 13px;
-        overflow: hidden;
-
+        right: 10%;
     }
 
     .hero a {
@@ -1228,15 +1233,43 @@ footer {
         transform: translateY(0%) scale(0.95);
     }
     .backtoPP{
-        padding: 10px 69px;
+        padding: 10px 40px;
     }
 }
-@media screen and (max-width:435px){
+@media screen and (max-width:459px){
     .search-input{
         max-width: 150px;
     }
 }
 
+@media screen and (max-width:399px){
+    .search-input{
+        max-width: 120px;
+    }
+    nav .logo {
+        font-size: 1rem;
+    }
+    nav .cart-icon{
+        font-size: 1.2rem;
+    }
+    nav .icons{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media  screen and (max-width:427px) {
+    .cta-button{
+        padding: 4px 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (max-width:332px) {
+    .backtoPP{
+        padding: 7px 20px;
+    }
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
