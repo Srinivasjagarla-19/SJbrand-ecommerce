@@ -54,7 +54,10 @@ nav .logo {
     font-weight: bold;
     color: #384858;
 }
-
+nav .logo img{
+    width: 80px;
+    border-radius: 10px;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -1008,7 +1011,7 @@ footer {
 
     nav .icons {
         position: absolute;
-        top: 20px;
+        top: 35px;
         right: 20px;
         cursor: pointer;
         color: #663e1f;
@@ -1048,7 +1051,7 @@ footer {
         all: unset;
         position: absolute;
         right: 16%;
-        top: 16px;
+        top: 28px;
         font-size: 1.5rem;
         color: #663e1f;
     }
@@ -1057,8 +1060,8 @@ footer {
         display: block;
         position: absolute;
         right: 3%;
-        top: 24px;
-        font-size: 1.7rem;
+        top: 30px;
+        font-size: 1.8rem;
         color: #663e1f;
     }
 
@@ -1123,7 +1126,7 @@ footer {
         border-radius: 20em;
         position: absolute;
         right: 13%;
-        top: 19px;
+        top: 28px;
     }
 
     .cssbuttons-io-button svg {
@@ -1156,7 +1159,7 @@ footer {
 
     .name{
         position: absolute;
-        top: 12.9px;
+        top: 27px;
         left: 42%;
         font-size: 0.7rem;
         padding: 3.5px 7px;
@@ -1201,7 +1204,8 @@ footer {
         max-width: 200px;
         font-size: 0.8rem;
         padding: 6px 12px;
-        right: 13%;
+        right: 13.3%;
+        top: 10px;
     }
     .gtsym {
         position: relative;
@@ -1239,10 +1243,14 @@ footer {
     .backtoPP{
         padding: 10px 40px;
     }
+    nav .logo img{
+        width: 60px;
+    }
 }
 @media screen and (max-width:459px){
     .search-input{
         max-width: 150px;
+        top:8.4px;
     }
     .hero a{
         position: absolute;
@@ -1250,6 +1258,9 @@ footer {
     }
     .hero p{
         padding-right: 20px;
+    }
+    nav .logo img{
+        width: 50px;
     }
 }
 
@@ -1267,7 +1278,7 @@ footer {
         font-size: 1.2rem;
     }
     .fa-house{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .cssbuttons-io-button{
         font-size: 0.5rem;
@@ -1289,6 +1300,9 @@ footer {
 @media  screen and (max-width:332px) {
     .backtoPP{
         padding: 7px 20px;
+    }
+    nav .logo img{
+        width: 40px;
     }
 }
 @keyframes fadeIn {
