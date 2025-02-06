@@ -1211,18 +1211,19 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;  
-        height: 40px;
+        width: 30px;  
+        height: 30px;
         border-radius: 50%;
         position: absolute;
-        top: 8px;
-        left: 20px;
+        top: 9px;
+        left: 10px;
         cursor: pointer;
         background: linear-gradient(145deg, #5E4035 0%, #8C6A5B 100%);
         color: #fff;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);; 
         transition: all 0.3s ease-in-out;
+        font-size: 0.7rem;
     }
     
     .gtsym .fa-less-than:hover {
@@ -1265,7 +1266,17 @@ footer {
     nav .icons{
         font-size: 1.2rem;
     }
-    
+    .fa-house{
+        font-size: 1.4rem;
+    }
+    .cssbuttons-io-button{
+        font-size: 0.5rem;
+    }
+    .fa-less-than{
+        font-size: 0.7rem;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media  screen and (max-width:427px) {
