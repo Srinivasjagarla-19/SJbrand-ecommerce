@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="images/sjbrands.webp" alt="logo"></div>
+            <div class="logo"><img src="images/SJbrands_main.jpg" alt="logo"></div>
             <div class="name"><p>welcome, <span id="user-email">Loading...</span></p></div>
             <ul id="menu">
                 <li><a href="auth.html">Home</a></li>
@@ -30,13 +30,18 @@
         </nav>
     </header>
     <main>
-        <section class="hero" style="background-image: url(images/Hero_layout1.jpg);">
-            <br>
-            <br>
-            <br>
-            <!-- <p>Discover the latest trends and essentials for your lifestyle</p> -->
-            <br>
+        <div class="hero-container">
+            <div class="hero active" style="background-image: url('images/Hero_layout1.jpg');"></div>
+            <div class="hero" style="background-image: url('images/Hero_Layout2.jpg');"></div>
+            <div class="hero" style="background-image: url('images/Hero_layout3.jpg');"></div>
+            <div class="hero" style="background-image: url('images/Hero_layout4.jpg');"></div>
             <a href="products.html" class="cta-button">Shop Now</a>
+            <div class="buttons">
+                <button onclick="prevSlide()">❮</button>
+                <button onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+            <!-- <p>Discover the latest trends and essentials for your lifestyle</p> -->
         </section>
         <section class="categories">
             <h2>Shop by Category</h2>
@@ -120,6 +125,28 @@
         function closeMenu(){
             sideMenu.style.right = "-230px";
         }
+        </script>
+        <script>
+            const slides = document.querySelectorAll('.hero');
+            let currentIndex = 0;
+    
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+            }
+    
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }
+    
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+            }
+    
+            // setInterval(nextSlide, 3000); 
         </script>
     <script src="js/script.js"></script>
 </body>
