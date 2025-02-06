@@ -166,6 +166,16 @@ function searchProducts() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        const button = document.querySelector(`.category-btn[data-category="${hash}"]`);
+        if (button) {
+            button.click(); 
+        }
+    }
+});
+
 function updateProductCardTotal(productId) {
     const productCard = document.querySelector(`.product-card[data-product-id="${productId}"]`);
     if (productCard) {
