@@ -229,7 +229,6 @@ nav .cart-icon {
     overflow: hidden;
     z-index: 1;
 }
-
 .cta-button::before,
 .backtoPP::before,
 .category-btn::before,
@@ -246,9 +245,7 @@ nav .cart-icon {
     z-index: -1;
 }
 
-/* .cta-button:hover, */
 .category-btn:hover,
-/* .backtoPP:hover, */
 .product-card button:hover,
 .cart-item-details button:hover,
 .checkout-container button[type="submit"]:hover {
@@ -302,7 +299,7 @@ nav .cart-icon {
 }
 
 .checkout-container button[type="submit"] {
-    background: #bd452ada;
+    background: linear-gradient(135deg, #AB886D, #5A3E36);
     width: 100%;
     margin-top: 20px;
     padding: 15px;
@@ -310,7 +307,6 @@ nav .cart-icon {
 }
 
 
-/* Categories */
 .categories {
     padding: 50px 0;
     text-align: center;
@@ -816,7 +812,6 @@ h4 .remove-btn{
 .cart-summary button {
     width: 100%;
     margin-top: 15px;
-    background: linear-gradient(135deg, #AB886D, #5A3E36);
     color: white;
     border: none;
     border-radius: 5px;
@@ -824,11 +819,6 @@ h4 .remove-btn{
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.1s ease-in-out;
-}
-
-.cart-summary button:hover {
-    background: linear-gradient(135deg, #9E7B67, #4A3229);
-    transform: scale(0.98);
 }
 
 .cart-notification {
